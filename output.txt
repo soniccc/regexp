@@ -1,0 +1,23 @@
+
+vault status
+vault kv put secret/hello foo=world
+vault kv get secret/hello
+vault kv delete secret/hello
+vault kv get secret/hello
+vault secrets enable -path=kv
+vault secrets enable -path=kv kv
+vault secrets enable kv
+vault sercrets list
+vault secrets list
+vault kv put kv/bob bob=chahal
+vault get kv/bob
+vault kv get kv/bob
+vault kv put kv/my-secret vault='m827634'
+vault kv get kv/my-secret
+vault kv get
+vault kv put kv/my-secret vault='m827634'
+vault kv list
+vault kv list kv/
+vault kv list secret/
+vault secrets disable kv
+
